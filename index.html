@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="container">
+    <h1>Let's split Our Food bill!</h1>
+    <form>
+        <p>Amount of money</p>
+        <span>$
+            <input type="text" id="money" placeholder="Total">
+        </span>
+
+        <p>Number of people</p>
+        <input type="text" id="people" placeholder="How many people?">
+
+        <p>Delivery Method</p>
+
+        <button id="deliveryServise">Add delivery</button>
+
+        <select id="delivery">
+        <option disabled> Select an option</option>
+        <option value="0.30"> "Very Hungry!" 30 min delivery 30% </option>
+        <option value="0.20">"I can't wait long time." 1 hour delivery 20%</option>
+        <option value="0.10">"We have some food! We can wait:)."  2.5 hours delivery 10%</option>
+        <option selected value="0.00">"We are not hungry at all!" 4 hours and more,0% delivery</option>
+     </select>
+     <button id="btn">Calculate</button>
+    </form>
+
+    <div id="showTotalAmountToPay">
+        <div id="billSplit">
+            <p>Amount</p>
+            <span>$</span>
+            <span id="dividedBill"> </span>
+            <span>per person</span>
+        </div>
+
+        <div id="addDelivery">
+            <p>Delivery</p>
+            <span>$</span>
+            <span id="dividedDelivery"> </span>
+            <span>per person</span>
+        </div>
+
+        <div id="totalDelivery">
+            <p>Total</p>
+            <span>$</span>
+            <span id="totalAndDelivery"> </span>
+            <span>per person</span>
+        </div>
+
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="index.js"></script>
+</body>
+</html>
